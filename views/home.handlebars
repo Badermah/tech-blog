@@ -1,0 +1,11 @@
+{{! Purpose: Display all posts on the home page }}
+
+<div class="card-container">
+  {{#if posts.length}}
+    {{#each posts as |post|}}
+      {{> post-details}}
+    {{/each}}
+  {{else}}
+    <h3>No posts yet...</h3>
+  {{/if}}
+</div>
