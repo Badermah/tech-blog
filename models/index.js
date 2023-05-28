@@ -1,5 +1,6 @@
+const User = require("./User");
 const Post = require("./Post");
-const Comment = require("./Comment");
+const Comment = require("./comment");
 
 // User Associations with Post
 User.hasMany(Post, {
@@ -16,6 +17,7 @@ Post.belongsTo(User, {
 // User Associations with Comment
 User.hasMany(Comment, {
   foreignKey: "user_id",
+  foreignKey: "author",
   onDelete: "CASCADE",
 });
 

@@ -1,19 +1,25 @@
 const router = require("express").Router();
+const {
+  createUser,
+  loginUser,
+  logoutUser,
+  updateUser,
+  deleteUser,
+} = require("../../../controllers/apiControllers/userController");
 
-// Users
-const userRoutes = require("./userRoutes");
-router.use("/users", userRoutes);
+// This route will be called with /api/users/signup
+router.post("/signup", createUser);
 
-// Posts
-const postRoutes = require("./postRoutes");
-router.use("/posts", postRoutes);
+// This route will be called with /api/users/login
+router.post("/login", loginUser);
 
-// Comments
-const commentRoutes = require("./commentRoutes");
-router.use("/comments", commentRoutes);
+// This route will be called with /api/users/logout
+router.post("/logout", logoutUser);
 
-router.use((req, res) => {
-  res.send("<h1>Wrong Route!</h1>");
-});
+// This route will be called with /api/users/:id (PUT)
+router.put("/:id", updateUser);
+
+// This route will be called with /api/users/:id (DELETE)
+router.delete("/:id", deleteUser);
 
 module.exports = router;
