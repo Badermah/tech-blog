@@ -1,48 +1,48 @@
 .card-container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .dream-card {
-    width: 850px;
-    min-height: 250px;
-    margin: 10px;
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-    border: 2px solid #45415b;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    color: #45415b;
-    overflow: hidden;
-  }
-  
-  .dream-card-title {
-    font-size: 25px;
-    margin-bottom: 5px;
-  }
-  
-  .dream-card-divider {
-    height: 2px;
-    background-color: #45415b;
-    margin-bottom: 10px;
-  }
-  
-  .dream-card-details {
-    font-size: 12px;
-    margin-bottom: 10px;
-  }
-  
-  .dream-card-content {
-    font-family: "Wix Madefor Display", sans-serif;
-    font-size: 16px;
-    height: calc(100% - 54px);
-    overflow: hidden;
-  }
-  
-  .dream-card-a {
-    text-decoration: none;
-    color: inherit;
-  }
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.dream-card {
+  width: 850px;
+  min-height: 250px;
+  margin: 10px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  border: 2px solid #45415b;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: #45415b;
+  overflow: hidden;
+}
+
+.dream-card-title {
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+
+.dream-card-divider {
+  height: 2px;
+  background-color: #45415b;
+  margin-bottom: 10px;
+}
+
+.dream-card-details {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.dream-card-content {
+  font-family: "Wix Madefor Display", sans-serif;
+  font-size: 16px;
+  height: calc(100% - 54px);
+  overflow: hidden;
+}
+
+.dream-card-a {
+  text-decoration: none;
+  color: inherit;
+}

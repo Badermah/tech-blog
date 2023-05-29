@@ -58,7 +58,6 @@ $postBtn.addEventListener("click", async (e) => {
     });
     // If the response is ok, we display an alert telling them the post was created
     if (response.ok) {
-      location.href = "/";
       alertDisplay("Post created!");
       // We reset the values of the form
       $postTitle.value = "";

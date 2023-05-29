@@ -2,10 +2,10 @@
 
 <div class="card-container">
   {{#if posts.length}}
-    {{#each posts as |post|}}
-      {{> post-details}}
-    {{/each}}
+  {{#each posts as |post|}}
+  {{> post-details}}
+  {{/each}}
   {{else}}
-    <h3>No posts yet...</h3>
+  <h3>No posts yet...</h3>
   {{/if}}
 </div>
